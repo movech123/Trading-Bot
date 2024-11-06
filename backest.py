@@ -59,11 +59,11 @@ def trade(ticker, start, end, shares):
 
 
 # Mag 7 tickers 
-tickers = ["TSLA", ]
+tickers = ["TSLA"]
 
 # Calculate the profits for a given time frame on all tickers 
 for i in tickers:
     profit, percent = trade(i, "2024-01-19","2024-01-22", 1000) 
     profits += profit
     percents +=percent
-print(profits, percents)
+print(f"Profits {profits},  Percent {percents}%")
